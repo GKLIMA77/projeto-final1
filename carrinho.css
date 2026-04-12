@@ -1,0 +1,53 @@
+body{
+margin:0;
+font-family: Arial;
+background-color:#0a0a0a;
+color:white;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(to right,#000,#021a1f);
+padding:20px;
+display:flex;
+align-items:center;
+}
+
+/* TITULO */
+
+header h1{
+margin-left:10px;
+font-size:40px;
+}
+
+/* MENU */
+
+nav{
+margin-left:50px;
+}
+
+nav a{
+color:#00ff66;
+text-decoration:none;
+margin-right:30px;
+font-size:20px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:white;
+}
+
+/* LINHA */
+
+.linha{
+height:6px;
+background:linear-gradient(to right,#0f4c5c,#1c7c84);
+}
+
+/* SEÇÕES */
+
+section{
+padding:40px;
+}

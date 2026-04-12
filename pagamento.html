@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pagamento</title>
+<link rel="stylesheet" href="pagamento.css">
+</head>
+
+<body>
+
+<h1>💳 Forma de Pagamento</h1>
+
+<div class="opcao">
+<h2>Cartão</h2>
+<button onclick="window.location.href='cartao.html'">Pagar com Cartão</button>  
+</div>
+
+<div class="opcao">
+<h2>PIX</h2>
+<button onclick="mostrarPix()">Pagar com PIX</button>
+</div>
+
+<!-- QR CODE PIX -->
+
+<div id="pix-area" style="display:none; margin-top:30px;">
+
+<h2>Pagamento via PIX</h2>
+
+<img src="qrcode_fake_pix.png" width="220">
+
+<p>Escaneie o QR Code com o aplicativo do seu banco.</p>
+
+</div>
+
+<script>
+
+function mostrarPix(){
+document.getElementById("pix-area").style.display="block";
+}
+
+</script>
+
+</body>
+</html>

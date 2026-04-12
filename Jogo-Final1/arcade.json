@@ -1,0 +1,33 @@
+{
+	"name": "jgo final",
+	"version": "1.0.0.0",
+	"description": "",
+	"id": "",
+	"unique-id": "kh0wekfw8n9",
+	"viewport-width": 854,
+	"viewport-height": 480,
+	"author": "",
+	"email": "",
+	"website": "",
+	"orientations": "landscape",
+	"c2version": "244",
+	"c3version": "r476.3",
+	"ife": true,
+	"used-plugins": [
+		"TiledBg",
+		"Sprite",
+		"Keyboard",
+		"Mouse",
+		"Spritefont2",
+		"Text",
+		"Audio"
+	],
+	"used-behaviors": [
+		"Anchor",
+		"scrollto",
+		"Platform",
+		"solid",
+		"Bullet",
+		"destroy"
+	]
+}
