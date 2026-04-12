@@ -30,12 +30,12 @@ flex:1;
 text-align:center;
 }
 
-nav a{
-margin:0 20px;
-text-decoration:none;
-color:#00ff00;
-font-size:18px;
-font-weight:bold;
+.navbar nav a {
+  color: #00ff00;         /* verde neon */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 nav a:hover{

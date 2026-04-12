@@ -13,6 +13,7 @@ text-align:center;
 display:flex;
 align-items:center;
 justify-content:space-between;
+flex-wrap:nowrap;
 background:rgba(255, 255, 255, 0.85);
 padding:15px 40px;
 }
@@ -21,12 +22,14 @@ padding:15px 40px;
 
 .logo img{
 height:60px;
+
 }
 
 /* MENU CENTRALIZADO */
 
 nav{
 flex:1;
+min-width:0;
 text-align:center;
 }
 
@@ -48,7 +51,8 @@ section{
 margin:40px auto;
 padding:30px;
 width:80%;
-background:rgba(0,0,0,0.75);
+background:rgba(239, 239, 239, 0.75);
+ color: black;
 border-radius:10px;
 }
 
@@ -62,6 +66,7 @@ margin-bottom:20px;
 
 .sobre, .jogo{
 margin-top:20px;
+color: black;
 }
 
 /* BOTÃO JOGAR */
