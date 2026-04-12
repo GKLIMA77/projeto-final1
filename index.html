@@ -1,62 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
 <title>Zumbi GameArte</title>
+
 <link rel="stylesheet" href="style.css">
+
+<script src="prompt.js"></script>
+
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#jogo">Gameplay</a>
-        <a href="#carrinho">Carrinho</a>
-        <a href="contato.html">Contato</a>
-        <a href="login.html">Login</a>
-    </nav>
+<header class="navbar">
+
+<div class="logo">
+<img src="logo.png" alt="Logo Zumbi GameArte">
+</div>
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#jogo">Gameplay</a>
+<a href="contato.html">Contato</a>
+<a href="claro.html" class="modo-claro">Modo Claro</a>
+</nav>
+
 </header>
 
+
+<!-- SOBRE O JOGO -->
+
 <section id="sobre">
-    <h2>Sobre o Jogo</h2>
 
-    <div class="sobre">
-        <h2>🧟 Centro de Treinamento Zumbi GameArte</h2>
+<h2>Sobre o Jogo</h2>
 
-        <p>
-        O <b>Zumbi GameArte</b> é um jogo de sobrevivência em um mundo dominado por zumbis, onde o jogador participa de um centro de treinamento para aprender a enfrentar hordas de mortos-vivos.
-        </p>
+<h3>Centro de Treinamento Zumbi GameArte</h3>
 
-        <p>
-        Durante as fases é preciso desviar de obstáculos e completar desafios que testam suas habilidades. O objetivo é sobreviver e evoluir no treinamento, se tornando um verdadeiro especialista em combater zumbis. 🧟🎮
-        </p>
-    </div>
+<p>
+O Zumbi GameArte foi desenvolvido utilizando HTML, CSS e JavaScript,
+com o objetivo de criar um jogo de sobrevivência que roda diretamente
+no navegador.
+</p>
+
+<p>
+No jogo, o jogador precisa desviar de obstáculos, sobreviver aos
+perigos do cenário e enfrentar desafios em um mundo dominado
+por zumbis.
+</p>
+
+<p>
+Cada fase traz novos desafios que testam a velocidade,
+atenção e reflexo do jogador.
+</p>
+
 </section>
+
+
+<!-- GAMEPLAY -->
 
 <section id="jogo">
-    <h2>Gameplay</h2>
 
-    <div class="jogo">
-        <h2>🎮 Centro de Treinamento</h2>
+<h2>Gameplay</h2>
 
-        <p>Clique abaixo para iniciar o treinamento contra zumbis.</p>
+<div class="jogo">
 
-        <a href="https://preview.construct.net/local.html" target="_blank">
-            <button class="botao-jogo">JOGAR AGORA</button>
-        </a>
-    </div>
+<p>Clique abaixo para jogar:</p>
+
+<a href="./Jogo-Final1/index.html" target="_blank">
+    <button class="botao-jogo">JOGAR AGORA</button>
+</a>
+
+</div>
+
 </section>
 
-<section id="carrinho">
-    <h2>Comprar</h2>
 
-    <a href="pagamento.html" target="_blank">
-        <button class="botao-compra">🛒🔥 Preço Especial R$ 29,90</button>
-    </a>
-</section>
+<!-- BOTÃO COMPRAR LATERAL -->
 
-<script src="script.js"></script>
+<a href="pagamento.html" class="botao-lateral">
+🛒 COMPRAR
+</a>
+
+
+<!-- RODAPÉ -->
+
+<footer>
+
+<p>© 2026 Zumbi GameArte</p>
+
+<p>Contato | Instagram | Suporte</p>
+
+</footer>
+
+
+<script src="pix.js"></script>
 
 </body>
 </html>
