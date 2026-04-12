@@ -1,4 +1,4 @@
-if(sessionStorage.getItem("idadeVerificada") !== "true"){
+if (sessionStorage.getItem("idadeVerificada") !== "true") {
 
 let nomeVisitante = prompt("Bem-vindo! Qual é o seu nome?");
 let idadeVisitante = Number(prompt("Olá " + nomeVisitante + "! Quantos anos você tem?"));
@@ -9,10 +9,12 @@ if (idadeVisitante >= 17) {
 
     sessionStorage.setItem("idadeVerificada","true");
 
-} else 
+} else {
 
     alert("Desculpe, " + nomeVisitante + ". Você precisa ter pelo menos 17 anos para acessar este site.");
 
     window.location.href = "bloqueado.html";
+
+}
 
 }
