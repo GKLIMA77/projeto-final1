@@ -9,16 +9,10 @@ if (idadeVisitante >= 17) {
 
     sessionStorage.setItem("idadeVerificada","true");
 
-} else {
+} else 
 
     alert("Desculpe, " + nomeVisitante + ". Você precisa ter pelo menos 17 anos para acessar este site.");
 
     window.location.href = "bloqueado.html";
 
 }
-
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 6bf2dc1391f487ddd161af6c1b786ff426670350
