@@ -87,11 +87,32 @@ atenção e reflexo do jogador.
 🛒 COMPRAR
 </a>
 
+<!-- BOTÃO INFO -->
+<button onclick="mostrarInfo()">Mostrar informações</button>
 
-<!-- RODAPÉ -->
+</header>
 
-<footer style="padding:20px; background:rgba(0,0,0,0.8); margin-top:20px;">
+<script>
+// 🔥 Dados do jogo
+let jogo = {
+    nome: "Zumbi GameArte",
+    ano: 2026,
+    criador: "Gabriel Henrique",
+    preco: "R$29,90"
+};
 
+function mostrarInfo() {
+    alert(
+        "Jogo: " + jogo.nome +
+        "\nAno: " + jogo.ano +
+        "\nCriador: " + jogo.criador +
+        "\nPreço: " + jogo.preco
+    );
+}
+</script>
+
+
+<!-- RODAPÉ --> 
 <p>© 2026 Zumbi GameArte</p>
 
 <p>Contato | Instagram | Suporte</p>
