@@ -1,37 +1,38 @@
 body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:url("zumbi fundo.png") no-repeat center;
-background-size:cover;
-color:white;
-text-align:center;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:url("zumbi fundo.png") no-repeat center;
+  background-size:cover;
+  color:white;
+  text-align:center;
+  min-height:100vh;
 }
 
 /* NAVBAR */
 
 .navbar{
-display:flex;
-align-items:center;
-justify-content:space-between;
-background:rgba(0,0,0,0.85);
-padding:15px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:rgba(0,0,0,0.85);
+  padding:15px 40px;
 }
 
 /* LOGO */
 
 .logo img{
-height:60px;
+  height:60px;
 }
 
 /* MENU CENTRALIZADO */
 
 nav{
-flex:1;
-text-align:center;
+  flex:1;
+  text-align:center;
 }
 
 .navbar nav a {
-  color: #00ff00;         /* verde neon */
+  color: #00ff00;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
@@ -39,70 +40,122 @@ text-align:center;
 }
 
 nav a:hover{
-color:white;
+  color:white;
 }
 
 /* SEÇÕES */
 
 section{
-margin:40px auto;
-padding:30px;
-width:80%;
-background:rgba(0,0,0,0.75);
-border-radius:10px;
+  margin:40px auto;
+  padding:30px;
+  width:80%;
+  background:rgba(0,0,0,0.75);
+  border-radius:10px;
 }
 
 /* TITULOS */
 
 h2{
-margin-bottom:20px;
+  margin-bottom:20px;
 }
 
 /* CAIXAS */
 
 .sobre, .jogo{
-margin-top:20px;
+  margin-top:20px;
 }
 
 /* BOTÃO JOGAR */
 
 .botao-jogo{
-background:#3dff02;
-color:white;
-font-size:18px;
-padding:12px 25px;
-border:none;
-border-radius:6px;
-cursor:pointer;
+  background:#3dff02;
+  color:white;
+  font-size:18px;
+  padding:12px 25px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
 }
 
 .botao-jogo:hover{
-background:#ff0000;
+  background:#ff0000;
 }
 
 /* BOTÃO COMPRAR LATERAL */
 
 .botao-lateral{
-position:fixed;
-right:240px;
-top:5%;
-transform:translateY(-50%);
-background:#ff0000;
-color:white;
-padding:18px 25px;
-font-size:20px;
-font-weight:bold;
-border-radius:10px;
-text-decoration:none;
-box-shadow:0 0 15px red;
-z-index:1000;
-transition:0.3s;
+  position:fixed;
+  right:240px;
+  top:5%;
+  transform:translateY(-50%);
+  background:#ff0000;
+  color:white;
+  padding:18px 25px;
+  font-size:20px;
+  font-weight:bold;
+  border-radius:10px;
+  text-decoration:none;
+  box-shadow:0 0 15px red;
+  z-index:1000;
+  transition:0.3s;
 }
 
 .botao-lateral:hover{
-background:#ff3333;
-transform:translateY(-50%) scale(1.1);
+  background:#ff3333;
+  transform:translateY(-50%) scale(1.1);
 }
 
+/* ===================== */
+/* 📱 RESPONSIVO CELULAR */
+/* ===================== */
 
+@media (max-width: 600px) {
 
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .navbar nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .botao-jogo {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .botao-lateral {
+    right: 10px;
+    bottom: 20px;
+    top: auto;
+    transform: none;
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+}
