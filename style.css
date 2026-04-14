@@ -8,6 +8,16 @@ body{
   min-height:100vh;
 }
 
+/* ===== AJUSTES GERAIS ===== */
+
+*{
+  box-sizing:border-box;
+}
+
+html, body{
+  overflow-x:hidden;
+}
+
 /* NAVBAR */
 
 .navbar{
@@ -24,19 +34,20 @@ body{
   height:60px;
 }
 
-/* MENU CENTRALIZADO */
+/* MENU */
 
 nav{
   flex:1;
   text-align:center;
 }
 
-.navbar nav a {
-  color: #00ff00;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  transition: 0.3s;
+.navbar nav a{
+  color:#00ff00;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:bold;
+  padding:10px;
+  transition:0.3s;
 }
 
 nav a:hover{
@@ -46,23 +57,19 @@ nav a:hover{
 /* SEÇÕES */
 
 section{
+  width:90%;
+  max-width:500px;
   margin:40px auto;
   padding:30px;
-  width:80%;
   background:rgba(0,0,0,0.75);
   border-radius:10px;
+  box-shadow:0 0 15px rgba(0,255,0,0.3);
 }
 
 /* TITULOS */
 
 h2{
   margin-bottom:20px;
-}
-
-/* CAIXAS */
-
-.sobre, .jogo{
-  margin-top:20px;
 }
 
 /* BOTÃO JOGAR */
@@ -75,87 +82,108 @@ h2{
   border:none;
   border-radius:6px;
   cursor:pointer;
+  box-shadow:0 0 10px #3dff02;
+  transition:0.3s;
 }
 
 .botao-jogo:hover{
   background:#ff0000;
 }
 
-/* BOTÃO COMPRAR LATERAL */
+/* BOTÃO COMPRAR NO TOPO */
 
 .botao-lateral{
   position:fixed;
-  right:240px;
-  top:5%;
-  transform:translateY(-50%);
+  top:15px;
+  right:260px; /* mais para a esquerda */
   background:#ff0000;
   color:white;
-  padding:18px 25px;
-  font-size:20px;
+  padding:10px 20px;
+  font-size:16px;
   font-weight:bold;
-  border-radius:10px;
+  border-radius:8px;
   text-decoration:none;
   box-shadow:0 0 15px red;
-  z-index:1000;
+  z-index:9999;
   transition:0.3s;
 }
 
 .botao-lateral:hover{
   background:#ff3333;
-  transform:translateY(-50%) scale(1.1);
+  transform:scale(1.1);
 }
 
-/* ===================== */
-/* 📱 RESPONSIVO CELULAR */
-/* ===================== */
+/* INPUTS */
 
-@media (max-width: 600px) {
+input{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  font-size:16px;
+  border-radius:6px;
+  border:none;
+  outline:none;
+}
 
-  .navbar {
-    flex-direction: column;
-    padding: 10px;
+/* RODAPÉ */
+
+footer{
+  padding:20px;
+  background:rgba(0,0,0,0.8);
+  margin-top:20px;
+}
+
+/* 📱 RESPONSIVO */
+
+@media (max-width:600px){
+
+  .navbar{
+    flex-direction:column;
+    padding:10px;
   }
 
-  .logo img {
-    height: 50px;
-    margin-bottom: 10px;
+  .logo img{
+    height:50px;
+    margin-bottom:10px;
   }
 
-  nav {
-    text-align: center;
+  .navbar nav a{
+    display:block;
+    margin:10px 0;
   }
 
-  .navbar nav a {
-    display: block;
-    margin: 10px 0;
+  section{
+    width:95%;
+    margin:20px auto;
+    padding:20px;
+    transform:scale(1.03);
   }
 
-  section {
-    width: 95%;
-    margin: 20px auto;
-    padding: 15px;
+  h2{
+    font-size:20px;
   }
 
-  h2 {
-    font-size: 20px;
+  p{
+    font-size:14px;
   }
 
-  p {
-    font-size: 14px;
+  .botao-jogo{
+    width:100%;
+    font-size:16px;
   }
 
-  .botao-jogo {
-    width: 100%;
-    font-size: 16px;
+  .botao-lateral{
+    top:10px;
+    right:180px;
+    font-size:14px;
+    padding:8px 14px;
   }
 
-  .botao-lateral {
-    right: 10px;
-    bottom: 20px;
-    top: auto;
-    transform: none;
-    font-size: 16px;
-    padding: 12px 18px;
+  input{
+    font-size:16px;
   }
 
+  body{
+    padding:5px;
+  }
 }
